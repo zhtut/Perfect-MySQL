@@ -35,8 +35,7 @@ let package = Package(
 	],
 	dependencies: [
 		.package(name: "PerfectCRUD", url: "https://github.com/PerfectlySoft/Perfect-CRUD.git", from: "1.2.2"),
-//		.package(name: "mysqlclient", url: "https://github.com/PerfectlySoft/\(clientPackage).git", from: "2.0.0"),
-        .package(name: "mysqlclient", path: "../\(clientPackage)"),
+		.package(name: "mysqlclient", url: "https://github.com/zhtut/\(clientPackage).git", from: "2.0.0"),
 		],
 	targets: [
 		.target(name: "PerfectMySQL", dependencies: ["PerfectCRUD", "mysqlclient"]),
